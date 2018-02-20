@@ -1,0 +1,85 @@
+/*.dashboard-bg > md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {*/
+    /*color: rgb(255, 255, 255);*/
+    /*background: rgb(255, 255, 255);*/
+/*}*/
+
+/*.dashboard-bg > md-tabs.md-default-theme .md-tab.md-active, md-tabs .md-tab.md-active, md-tabs.md-default-theme .md-tab.md-active md-icon, md-tabs .md-tab.md-active md-icon, md-tabs.md-default-theme .md-tab.md-focused, md-tabs .md-tab.md-focused, md-tabs.md-default-theme .md-tab.md-focused md-icon, md-tabs .md-tab.md-focused md-icon {*/
+    /*color: rgb(255, 255, 255);*/
+/*}*/
+
+/*.dashboard-bg > md-tabs.md-default-theme .md-tab, md-tabs .md-tab {*/
+    /*color: rgba(255, 255, 255, 0.5);*/
+/*}*/
+
+/*md-card.dashboard {*/
+    /*max-height: 100%;*/
+    /*background-color: #fafafa;*/
+    /*color: #000;*/
+    /*border-radius: 2px;*/
+    /*transition: box-shadow .15s ease;*/
+    /*box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);*/
+/*}*/
+
+/*md-card.dashboard > md-card-title {*/
+    /*height: 64px;*/
+    /*min-height: 64px;*/
+    /*padding: 0 8px 0 16px;*/
+    /*border-bottom: 1px solid rgba(0, 0, 0, .12);*/
+/*}*/
+
+/*md-card.dashboard > md-card-title > md-card-title-text {*/
+    /*text-overflow: ellipsis;*/
+    /*overflow: hidden;*/
+    /*font-size: 15px;*/
+    /*font-weight: 600;*/
+    /*cursor: pointer;*/
+/*}*/
+
+/*md-card.dashboard > md-card-content{*/
+    /*height: 250px;*/
+    /*max-height: 250px;*/
+    /*min-height: 250px;*/
+    /*overflow: auto;*/
+    /*padding: 0;*/
+/*}*/
+
+/*md-card.dashboard > md-card-actions {*/
+    /*border-top: 1px solid rgba(0, 0, 0, .12);*/
+    /*background-color: #eef0f2;*/
+    /*margin: 0;*/
+    /*padding: 8px;*/
+/*}*/
+
+/*md-content.dashboard {*/
+    /*background-color: transparent;*/
+/*}*/
+
+
+/*.dashboard-bg {*/
+    /*background-image: url(../images/bg/header.png);*/
+    /*background-color: rgb(63, 81, 181) !important;*/
+/*}*/
+
+/*@media screen and (max-width: 599px) {*/
+    /*.dashboard-header {*/
+        /*padding: 0 24px !important;*/
+    /*}*/
+/*}*/
+
+/*@media screen and (min-width: 600px) {*/
+    /*.dashboard-header {*/
+        /*padding: 15px 25px 0 !important;*/
+    /*}*/
+/*}*/
+
+/*.dashboard-header-text {*/
+    /*font-style: normal;*/
+    /*font-variant-ligatures: normal;*/
+    /*font-variant-caps: normal;*/
+    /*font-variant-numeric: normal;*/
+    /*font-weight: 400;*/
+    /*font-stretch: normal;*/
+    /*font-size: 24px;*/
+    /*line-height: 20px;*/
+    /*font-family: Roboto, "Helvetica Neue", sans-serif;*/
+/*}*/

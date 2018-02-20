@@ -1,0 +1,17 @@
+md-toast.infor .md-toast-content, md-toast .md-toast-content {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+md-toast.error .md-toast-content, md-toast .md-toast-content {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+md-toast.success .md-toast-content, md-toast .md-toast-content {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}

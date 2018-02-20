@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-br" ng-app="AppStarter">
+
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="AngularJS Material Starter - Jhordan Lima">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+    <title ng-bind="current.name">AngularJS Material Starter - Jhordan Lima</title>
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="AngularJS Material Starter - Jhordan Lima">
+    <link rel="icon" sizes="192x192" href="app/images/touch/chrome-touch-icon.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="AngularJS Material Starter - Jhordan Lima">
+    <link rel="apple-touch-icon" href="app/images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="app/images/touch/ms-touch-icon.png">
+    <meta name="msapplication-TileColor" content="#3f51b5">
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#3f51b5">
+
+    <link rel="stylesheet" href="./lib/lib.min.css">
+    <link rel="stylesheet" href="./app/css/app.min.css">
+
+</head>
+
+<body layout="row" ng-cloak>
+
+<md-sidenav class="md-sidenav-left app-sidenav" md-component-id="menu" md-is-locked-open="$mdMedia('gt-sm')" md-whiteframe="4">
+
+    <md-toolbar class="md-theme-indigo">
+        <img flex src="./app/images/logo/angular-logo.svg" class="logo" alt="AngularJS">
+    </md-toolbar>
+
+    <md-content flex>
+
+        <h3 class="md-caption" align="center">MENU</h3>
+
+        <md-divider></md-divider>
+
+        <md-list>
+
+            <md-list-item class="active" ng-click="goTo('/')">
+                <p><strong>{{'Início' | uppercase}}</strong></p>
+            </md-list-item>
+
+            <md-list-item class="sub-menu">
+
+                <md-list flex>
+                    <md-list-item ng-click="goTo('/')">
+                        <p><strong>{{'SubItem' | uppercase}}</strong></p>
+                    </md-list-item>
+                </md-list>
+
+            </md-list-item>
+
+        </md-list>
+
+    </md-content>
+
+    <p class="md-body-2 primary-text-color" align="center" md-truncate>Jhordan Lima</p>
+
+</md-sidenav>
+
+<main layout="column" flex>
+
+    <md-toolbar class="white" md-whiteframe="1">
+
+        <div class="md-toolbar-tools">
+
+            <md-button class="md-icon-button" aria-label="Menu" ng-click="sideNav()" hide-gt-sm>
+                <md-icon class="primary-text-color" md-svg-icon="menu"></md-icon>
+            </md-button>
+
+            <md-button ng-if="loading.show" class="md-icon-button" aria-label="Carregando">
+                <md-progress-circular class="md-warn" md-diameter="25"></md-progress-circular>
+            </md-button>
+
+            <div layout="row" flex>
+                <h2 class="primary-text-color" ng-hide="loading.show" ng-bind="current.name" flex md-truncate></h2>
+                <h2 class="primary-text-color" ng-if="loading.show" ng-bind="loading.message" flex md-truncate></h2>
+            </div>
+
+        </div>
+
+    </md-toolbar>
+
+    <md-progress-linear ng-if="loading.show" class="md-warn" md-mode="indeterminate"></md-progress-linear>
+
+    <section layout="column" ng-view flex></section>
+
+</main>
+
+<script type="text/javascript" src="./app/js/prototype.js"></script>
+<script type="text/javascript" src="./lib/lib.min.js"></script>
+<script type="text/javascript" src="./app/js/app.min.js"></script>
+
+</body>
+
+</html>

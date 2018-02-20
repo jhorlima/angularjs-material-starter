@@ -1,0 +1,5 @@
+.idea
+node_modules/
+/public/app/js/app.min.js
+/public/app/css/app.min.css
+/public/lib/
